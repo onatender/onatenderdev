@@ -49,7 +49,6 @@ function fetchJSONData() {
 function fillthetable(obj) {
     for (let item of obj["diller"]) {
         var element = document.createElement("div");
-        console.log(item["name"]);
         element.classList.add('list-item');
         let elementspan= document.createElement('span');
         elementspan.innerText = item["name"];
@@ -71,7 +70,6 @@ function listen2() {
 fetchJSONData()
     .then((data) => {
         obj = data;
-        console.log(data);
         fillthetable(data);
         listen1();
         listen2();
@@ -85,14 +83,10 @@ const listele = () => {
     }
 
     for (let element of document.querySelectorAll(".box-left .tablo .list-item")) {
-        console.log(element.innerText);
         if (element.classList.contains('list-selected')) {
-            console.log(element.innerText);
             for (let item of obj["diller"]) {
-                console.log(item);
                 if (item["name"] == element.innerText) {
                     for (let certificate of item["certificates"]) {
-                        console.log("certificate");
                         let newelement = document.createElement("div");
                         newelement.classList.add("list-item");
                         newelement.innerText = certificate;

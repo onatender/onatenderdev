@@ -33,6 +33,13 @@
                 "C# ile Algoritma ve Programlama 101",
                 "C# Form ile Görsel ve Nesne Tabanlı Programlama 101"
             ]
+        },
+        {
+            "name": "Flutter",
+            "certificates": [
+                "BTK Akademi - Flutter ile Mobil Programlama"
+               
+            ]
         }
     ]
 }

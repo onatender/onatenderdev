@@ -116,6 +116,7 @@
         .list-item {
             padding: 10px 0;
             padding-left: 20px;
+            padding-right: 20px;
             transition: .3s all;
             border-bottom: 1px solid gray;
         }
@@ -134,7 +135,8 @@
             font-size: 32px;
             font-family: 'Raleway', sans-serif;
             color: white;
-            padding: 0 5px;
+            padding: 10px 15px;
+            border-radius: 24px 24px 0 0;
         }
 
 
@@ -171,7 +173,7 @@
         .box-right {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             width: 50%;
             height: 100%;
             padding: 0px 40px;
@@ -179,24 +181,33 @@
 
         .tablo {
             height: 50vh;
+            border-radius: 0 0 24px 24px;
+            overflow: auto;
         }
 
-     
 
-        
+
+
         @media only screen and (max-width:1000px) {
             .box {
                 flex-direction: column;
                 width: 80%;
             }
-          
 
-           .box-left ,.box-right{
-            width: 100%;
-            padding: 0;
-            height: 50%;
-           }
-           
+            .box-left .tablo {
+                border-radius: 0;
+            }
+
+            .box-right .baslik {
+                border-radius: 0;
+            }
+            .box-left,
+            .box-right {
+                width: 100%;
+                padding: 0;
+                height: 50%;
+            }
+
             .tablo {
                 width: 100%;
             }
@@ -204,11 +215,7 @@
             hr {
 
                 display: none;
-                /* border: 1px solid gray;
-                height: 0;
-                width: 100%;
-                position: absolute;
-                left: 50%; */
+
             }
 
         }

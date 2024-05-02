@@ -3,13 +3,13 @@
         {
             "name": "HTML",
             "certificates": [
-                "Turkcell - 101: HTML"
+                "Turkcell Akademi - 101: HTML"
             ]
         },
         {
             "name": "CSS",
             "certificates": [
-                "201: HTML5 & CSS"
+                "Turkcell Akademi - 201: HTML5 & CSS"
             ]
         },
         {
@@ -38,6 +38,21 @@
             "name": "Flutter",
             "certificates": [
                 "BTK Akademi - Flutter ile Mobil Programlama"
+               
+            ]
+        },
+        {
+            "name": "SQL",
+            "certificates": [
+                "Turkcell Akademi - SQL ile Veritabanı Sorgulama 101"
+               
+            ]
+        }
+        ,
+        {
+            "name": "Data Science",
+            "certificates": [
+                "Patika.dev - Başlangıç Seviye Veri Bilimi Patikası"
                
             ]
         }

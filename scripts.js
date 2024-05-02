@@ -49,9 +49,14 @@ function fetchJSONData() {
 function fillthetable(obj) {
     for (let item of obj["diller"]) {
         var element = document.createElement("div");
-        element.innerText = item["name"];
         console.log(item["name"]);
         element.classList.add('list-item');
+        let elementspan= document.createElement('span');
+        elementspan.innerText = item["name"];
+        let img = document.createElement('img');
+        img.src = item["icon"];
+        element.append(img);
+        element.append(elementspan);
         document.querySelector(".box-left .tablo").append(element);
     }
 }
@@ -98,3 +103,43 @@ const listele = () => {
         }
     }
 };
+
+
+
+function renkDegistir() {
+
+    let i = 0;
+    let darken = false;
+    setInterval(function () {
+        let text = `2px 0px 222px rgb(${i}, ${i}, ${i})`;
+        document.querySelector('.resim-container img').style.boxShadow = text;
+        if (darken) {
+            i--;
+        }
+        else {
+            i++;
+        }
+        if (i == 166) darken = true;
+        if (i == 0) darken = false;
+    }, 50);
+}
+
+function boyutDegistir() {
+
+    let i = 1;
+    let largen = true;
+    setInterval(function () {
+        document.querySelector('.resim-container img').style.scale = `${i}`;
+        if (largen) {
+            i+=0.0005;
+        }
+        else {
+            i-=0.0005;
+        }
+        if (i > 1.1) largen = false;
+        if (i < 1) largen = true;
+    }, 30);
+}
+
+renkDegistir();
+boyutDegistir();

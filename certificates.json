@@ -4,33 +4,38 @@
             "name": "İngilizce",
             "certificates": [
                 "EF SET - C1 Advanced"
-            ]
+            ],
+            "icon": "icons/english.svg"
         },
         {
             "name": "HTML",
             "certificates": [
                 "Turkcell Akademi - 101: HTML"
-            ]
+            ],
+            "icon": "icons/html.svg"
         },
         {
             "name": "CSS",
             "certificates": [
                 "Turkcell Akademi - 201: HTML5 & CSS"
-            ]
+            ],
+            "icon": "icons/css.svg"
         },
         {
             "name": "JavaScript",
             "certificates": [
                 "IBM - Introduction to Web Development with HTML, CSS, JavaScript",
                 "Turkcell - 301: JavaScript"
-            ]
+            ],
+            "icon": "icons/js.svg"
         },
         {
             "name": "Python",
             "certificates": [
                 "Google - Get Started with Python",
                 "IBM - Python for Data Science, AI & Development"
-            ]
+            ],
+            "icon": "icons/python.svg"
         },
         {
             "name": "C#",
@@ -38,29 +43,29 @@
                 "BTK Akademi - C# Programlama",
                 "C# ile Algoritma ve Programlama 101",
                 "C# Form ile Görsel ve Nesne Tabanlı Programlama 101"
-            ]
+            ],
+            "icon": "icons/csharp.svg"
         },
         {
             "name": "Flutter",
             "certificates": [
                 "BTK Akademi - Flutter ile Mobil Programlama"
-               
-            ]
+            ],
+            "icon": "icons/flutter.svg"
         },
         {
             "name": "SQL",
             "certificates": [
                 "Turkcell Akademi - SQL ile Veritabanı Sorgulama 101"
-               
-            ]
-        }
-        ,
+            ],
+            "icon": "icons/sql.svg"
+        },
         {
             "name": "Data Science",
             "certificates": [
                 "Patika.dev - Başlangıç Seviye Veri Bilimi Patikası"
-               
-            ]
+            ],
+            "icon": "icons/data-science.svg"
         }
     ]
 }

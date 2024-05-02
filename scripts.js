@@ -26,17 +26,17 @@ function sayfayaGit(i) {
 }
 
 
-onscrollend = (event) => {
-    let tamkisim = parseInt(window.scrollY / window.innerHeight);
-    let artan = window.scrollY - tamkisim * window.innerHeight;
-    if (artan > window.innerHeight / 2) {
-        sayfayaGit(tamkisim + 1);
-    }
-    else {
-        sayfayaGit(tamkisim);
-    };
+// onscrollend = (event) => {
+//     let tamkisim = parseInt(window.scrollY / window.innerHeight);
+//     let artan = window.scrollY - tamkisim * window.innerHeight;
+//     if (artan > window.innerHeight / 2) {
+//         sayfayaGit(tamkisim + 1);
+//     }
+//     else {
+//         sayfayaGit(tamkisim);
+//     };
 
-}
+// }
     function listen1() {
         for (let element of document.getElementsByClassName('list-item')) {
             element.addEventListener('click', function () {

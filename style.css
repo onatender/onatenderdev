@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    z-index: 10;
+    height: 15vh;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    color: white;
+    position: fixed;
+    justify-content: space-between;
+    width: 95%;
+}
+
+
+body {
+    /* background-image: url('mbg.png'); */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.logo {
+    font-weight: 200;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.navbar-items-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    flex: 1;
+    flex-grow: .8;
+    flex-shrink: 0;
+    min-width: 200px;
+    max-width: 60%;
+}
+
+.navbar-item-text {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 2vh;
+    border-radius: 16px;
+    transition: 200ms box-shadow ease-in-out;
+    margin-right: 2vh;
+}
+
+.navbar-item:hover {
+    /* box-shadow: 0px 0px 8px  rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, .1);
+}
+
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#giris {
+    background: linear-gradient(to right, #181885, #0f0c29);
+}
+
+.giris-text h2 {
+    color: white;
+    font-size: 4vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+.giris-text h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 8vh;
+}
+
+
+#biyografi {
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+#yetkinlikler {
+
+    background: linear-gradient(to right, #7e8ac1, #74ebd5);
+
+}
+
+#iletisim {
+
+    background: linear-gradient(to right, #0575E6, #00F260);
+
+}
+
+h1 {
+    line-height: 35px;
+}
+
+mark {
+    background: rgba(255, 255, 255, .1);
+    padding: 0 10px;
+    color: white;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 32;
+}
+
+.material-symbols-outlined {}
+
+
+
+.resim-container {
+    width: 30%;
+    height: 60%;
+}
+
+.resim-container img {
+    border-radius: 32vw;
+    width: 32vw;
+    height: 32vw;
+    box-shadow: 2px 5px 30px black;
+}
+
+.biyografi-text h2 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin-top: 3%;
+    text-align: left;
+}
+
+.biyografi-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.giris-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iletisim-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+    font-weight: 200;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contact:hover {
+    background-color: rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-scroll {
+    background-color: rgba(255, 255, 255, .5);
+    opacity: 1;
+    color: black;
+    backdrop-filter: blur(22px);
+    font-weight: 200;
+}
+
+.highlight {
+    background-color: black;
+    color: white;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .navbar-item-text {
+        display: none;
+    }
+
+    .giris-text h2 {
+        margin-top: 3%;
+        font-size: 6vw;
+    }
+
+    .giris-text h1 {
+        font-size: 12vw;
+        text-wrap: wrap;
+        line-height: 6vh;
+    }
+
+    .biyografi-text h2 {
+      
+        text-align: center;
+    }
+
+    .giris-container {
+        padding-top:20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    .giris-text {
+        padding: 3% 5%;
+    }
+
+    .resim-container {
+        height: 32vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resim-container img {
+        height: 32vh;
+        width: 32vh;
+    }
+
+    .navbar-items-container {
+        justify-content: flex-end;
+        padding-right: 5%;
+    }
+
+    .logo {
+        font-size: 3vh;
+    }
+
+    section {
+        padding-top: 0%;
+    }
+
+   
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onatender.dev</title>
+    <link rel="icon" href="laptop.svg" type="image/icon type">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <span class="logo">onatender.dev</span>
+        </div>
+        <div class="navbar-items-container">
+
+
+            <a href="#giris">
+                <p class="navbar-item">
+                    <span class="navbar-item-text">Giriş</span>
+                    <span class="material-symbols-outlined">home</span>
+                </p>
+            </a>
+
+
+
+            <a href="#biyografi">
+                <p class="navbar-item">
+                    <span class="navbar-item-text">Biyografi</span>
+                    <span class="material-symbols-outlined">book_2</span>
+                </p>
+            </a>
+
+
+
+            <a href="#yetkinlikler">
+                <p class="navbar-item">
+                    <span class="navbar-item-text">Yetkinlikler</span>
+                    <span class="material-symbols-outlined">book</span>
+                </p>
+            </a>
+
+            <a href="#iletisim">
+                <p class="navbar-item">
+                    <span class="navbar-item-text">İletişim</span>
+                    <span class="material-symbols-outlined">mail</span>
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+    </div>
+    <section id="giris">
+        <div class="giris-container">
+            <div class="giris-text">
+                <h2>Yazılıma mı ihtiyacınız var?</h2>
+                <h1 id="sec">Bilgisayar Mühendisi</h1>
+                <h1><mark>Onat Ender</mark></h1>
+                <h2>Kaliteli yazılımın adresi!</h2>
+            </div>
+            <div class="resim-container">
+                <img src="fotodecope.png" alt="onat ender resmi">
+            </div>
+
+        </div>
+    </section>
+    <section id="biyografi">
+        <div class="biyografi-container">
+            <div class="biyografi-text">
+                <h2><mark style="padding:0; background-color: purple;">19 Mart 2003</mark> tarihinde Sivas'ta dünyaya
+                    geldi.</h2>
+                <h2>İlk ve ortaöğretimini <mark style="padding:0; background-color: purple;">Ankara</mark>'da tamamladı.
+                </h2>
+                <h2>Lise eğitimini <mark style="padding:0; background-color: purple;">Osmangazi Fen Lisesi'nde</mark>
+                    gördü.</h2>
+                <h2><mark style="padding:0; background-color: purple;">Kırıkkale Üniversitesi Bilgisayar
+                        Mühendisliği</mark> bölümünde okumaktadır.</h2>
+                <h2>Şu anda <mark style="padding:0; background-color: purple;">2.Sınıf</mark> öğrencisidir.</h2>
+            </div>
+        </div>
+    </section>
+    <section id="yetkinlikler">
+        <div class="yetkinlikler-container">
+
+            <div class="box">
+                <div class="box-left">
+
+                    <span class="baslik" style="background-color: rgb(41, 41, 155);">Diller</span>
+                    <div class="tablo">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="box-right">
+                    <span class="baslik" style="background-color: purple;">Sertifikalar</span>
+                    <div class="tablo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .list-selected {
+            background-color: gray;
+        }
+
+        .list-item {
+            padding: 10px 0;
+            padding-left: 20px;
+            transition: .3s all;
+            border-bottom: 1px solid gray;
+        }
+
+        .list-item:hover {
+            cursor: pointer;
+            background-color: lightgray;
+        }
+
+        .tablo {
+            height: 40vh;
+            background-color: rgba(255, 255, 255, .8);
+        }
+
+        .baslik {
+            font-size: 32px;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            padding: 0 5px;
+        }
+
+
+
+        hr {
+            padding: 0;
+            margin: 0;
+            border: 1px solid gray;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+        }
+
+        .yetkinlikler-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .box {
+            margin-top: 10vh;
+            width: 50%;
+            height: 70vh;
+            box-shadow: 0px 2px 2px gray;
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 24px;
+            backdrop-filter: blur(25px);
+            display: flex;
+        }
+
+
+        .box-left,
+        .box-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+            height: 100%;
+            padding: 0px 40px;
+        }
+
+        .tablo {
+            height: 50vh;
+        }
+
+     
+
+        
+        @media only screen and (max-width:1000px) {
+            .box {
+                flex-direction: column;
+                width: 80%;
+            }
+          
+
+           .box-left ,.box-right{
+            width: 100%;
+            padding: 0;
+            height: 50%;
+           }
+           
+            .tablo {
+                width: 100%;
+            }
+
+            hr {
+
+                display: none;
+                /* border: 1px solid gray;
+                height: 0;
+                width: 100%;
+                position: absolute;
+                left: 50%; */
+            }
+
+        }
+    </style>
+    <section id="iletisim">
+        <div class="iletisim-container">
+            <div class="iletisim-text">
+                <a href="https://www.linkedin.com/in/onatender">
+                    <span class="contact"><img height="48px" src="linkedin_icon.svg"><span
+                            style="padding-left: 9px;">onatender</span></span>
+                </a>
+                <a href="https://www.github.com/onatender">
+                    <span class="contact"><img style="border-radius: 48px; background-color: white;" height="48px"
+                            src="github.svg"><span style="padding-left: 9px;">onatender</span></span>
+                </a>
+                <a href="https://leetcode.com/u/onatender/">
+                    <span class="contact"><img height="48px" src="leetcode.svg"><span
+                            style="padding-left: 9px;">onatender</span></span>
+                </a>
+                <span class="contact"><img height="48px" src="gmail.svg"><span
+                        style="padding-left: 9px; font-size:3vh;">onatender@gmail.com</span></span>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

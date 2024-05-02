@@ -1,0 +1,38 @@
+{
+    "diller": [
+        {
+            "name": "HTML",
+            "certificates": [
+                "Turkcell - 101: HTML"
+            ]
+        },
+        {
+            "name": "CSS",
+            "certificates": [
+                "201: HTML5 & CSS"
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "certificates": [
+                "IBM - Introduction to Web Development with HTML, CSS, JavaScript",
+                "Turkcell - 301: JavaScript"
+            ]
+        },
+        {
+            "name": "Python",
+            "certificates": [
+                "Google - Get Started with Python",
+                "IBM - Python for Data Science, AI & Development"
+            ]
+        },
+        {
+            "name": "C#",
+            "certificates": [
+                "BTK Akademi - C# Programlama",
+                "C# ile Algoritma ve Programlama 101",
+                "C# Form ile Görsel ve Nesne Tabanlı Programlama 101"
+            ]
+        }
+    ]
+}

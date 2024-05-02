@@ -1,6 +1,12 @@
 {
     "diller": [
         {
+            "name": "İngilizce",
+            "certificates": [
+                "EF SET - C1 Advanced"
+            ]
+        },
+        {
             "name": "HTML",
             "certificates": [
                 "Turkcell Akademi - 101: HTML"
